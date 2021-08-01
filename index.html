@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+    body {
+      background-color: hsl(0, 0%, 95%);
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .box {
+      line-height: 1.8em;
+      padding: 0px 45px;
+
+    }
+    .box-center {
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      margin: 5%;
+     
+      
+    }
+
+    .bg-orange {
+      background-color:hsl(31, 77%, 52%) ; 
+    }
+
+    .bg-cyan {
+      background-color: hsl(184, 100%, 22%);
+    }
+
+    .bg-dark-cyan {
+      background-color: hsl(179, 100%, 13%);
+    }
+
+    .text-orange {
+      color:hsl(31, 77%, 52%) ; 
+    }
+
+    .text-cyan {
+      color: hsl(184, 100%, 22%);
+    }
+
+    .text-dark-cyan {
+      color: hsl(179, 100%, 13%);
+    }
+    
+    .title{
+      color: hsl(0, 0%, 95%);
+      text-transform: uppercase;
+      font-size: 42px;
+      font-family: 'Big Shoulders Display';
+    }
+    
+    .desc {
+      color:hsla(0, 0%, 100%, 0.75);
+      font-size: 15px;
+      letter-spacing: 1px;
+     
+    }
+
+    .round-btn {
+      background-color:hsl(0, 0%, 95%);
+      border-radius: 25px;
+      font-size: 15px;
+      padding: 10px 30px;
+    }
+    .round-btn:hover {
+      background-color: transparent;
+      border: 1px solid hsl(0, 0%, 95%);
+      color: white;
+    }
+    
+   
+
+    @media screen and (min-width: 769px) {
+
+      .radius-left {
+      border-top-left-radius: 10px ;
+      border-bottom-left-radius: 10px;
+    }
+
+    .radius-right {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    }
+
+    @media only screen and (max-width: 768px) {
+
+      .radius-top-mobile {
+      border-top-left-radius: 10px ;
+      border-top-right-radius: 10px;
+      }
+
+    .radius-bottom-mobile {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+
+  <div class="container">
+    <div class="row box-center">
+      <div class="col-lg-3 col-md-4 box bg-orange radius-left radius-top-mobile">
+        <img class="mt-5" src="images/icon-sedans.svg" />
+        <div class="title mt-5">Sedans</div>
+        <p class="mt-5 desc">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city
+        or on your next road trip.</p>
+      <button class="btn text-orange round-btn my-5">Learn More</button>
+      </div>
+
+      <div class="col-lg-3 col-md-4 box bg-cyan ">
+        <img class="mt-5"src="images/icon-suvs.svg" />
+        <div class="title mt-5">SUVs</div>
+        <p class="mt-5 desc">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.</p>
+      <button class="btn text-cyan round-btn my-5 ">Learn More</button>
+      </div>
+
+      <div class="col-lg-3 col-md-4 box bg-dark-cyan radius-right radius-bottom-mobile"> 
+        <img class="mt-5" src="images/icon-luxury.svg" />
+        <div class="title mt-5">Luxury</div>
+        <p class="mt-5 desc">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.</p>
+        <button class="btn text-dark-cyan round-btn my-5 ">Learn More</button>
+      </div>
+
+    </div> 
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">BURAK YAZICI</a>.
+  </div>
+</body>
+
+</html>
